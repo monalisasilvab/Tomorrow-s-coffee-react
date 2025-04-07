@@ -1,0 +1,199 @@
+/* Container principal */
+.login-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 50px;
+    background-color: #f3e5d8;
+    /* Bege claro, remetendo ao creme do café */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Título do formulário */
+.login-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #5c4033;
+    /* Marrom escuro, remetendo ao café */
+    font-weight: 600;
+}
+
+/* Estilo dos campos do formulário */
+.login-container form div {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Labels dos inputs */
+.login-container label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #4e3629;
+    /* Tom de marrom médio */
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Inputs de texto */
+.login-container input {
+    width: 98%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #a67b5b;
+    /* Marrom claro */
+    border-radius: 4px;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+.login-container input:focus {
+    border-color: #8b5e3b;
+    /* Marrom médio mais forte */
+    outline: none;
+}
+
+/* Mensagem de erro */
+.error-message {
+    font-size: 16px;
+    color: white;
+    background-color: #b22222;
+    /* Vermelho queimado, para alertas */
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Botão de login */
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #6f4e37;
+    /* Marrom café principal */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+    background-color: #5c4033;
+    /* Marrom mais escuro ao passar o mouse */
+}
+
+.login-container button:disabled {
+    background-color: #a67b5b;
+    /* Marrom claro desabilitado */
+    cursor: not-allowed;
+}
+
+/* Responsividade para o Login */
+@media (max-width: 1200px) {
+    .login-container {
+        width: 90%;
+        padding: 18px;
+    }
+
+    .login-container h2 {
+        font-size: 22px;
+    }
+
+    .login-container input,
+    .login-container button {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    .login-container {
+        width: 85%;
+        padding: 16px;
+    }
+
+    .login-container h2 {
+        font-size: 20px;
+    }
+
+    .login-container input,
+    .login-container button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        width: 80%;
+        padding: 14px;
+    }
+
+    .login-container h2 {
+        font-size: 18px;
+    }
+
+    .login-container input,
+    .login-container button {
+        font-size: 13px;
+    }
+
+    .login-container label {
+        font-size: 12px;
+    }
+
+    .error {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 576px) {
+    .login-container {
+        width: 95%;
+        padding: 12px;
+    }
+
+    .login-container h2 {
+        font-size: 16px;
+    }
+
+    .login-container input,
+    .login-container button {
+        font-size: 12px;
+    }
+
+    .login-container label {
+        font-size: 11px;
+    }
+
+    .error {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 320px) {
+    .login-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .login-container h2 {
+        font-size: 14px;
+    }
+
+    .login-container input,
+    .login-container button {
+        font-size: 11px;
+    }
+
+    .login-container label {
+        font-size: 10px;
+    }
+
+    .error {
+        font-size: 9px;
+    }
+}

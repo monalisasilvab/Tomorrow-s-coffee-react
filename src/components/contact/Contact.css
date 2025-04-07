@@ -1,0 +1,205 @@
+/* Estilo de Contact.css */
+.contact-section {
+    background-color: #f4f7f6;
+    padding: 40px 20px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Container principal */
+.contact-section .container {
+    max-width: 900px;
+    width: 100%;
+}
+
+/* Título */
+.contact-title {
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #5a3d2b;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Descrição */
+.contact-description {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Informações de contato */
+.contact-info {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Formulário */
+.contact-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Campos do formulário */
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #333;
+    transition: border 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #50382c;
+    outline: none;
+}
+
+/* Botão */
+.submit-btn {
+    background-color: #50382c;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-self: center;
+    /* Centraliza o botão */
+    width: 50%;
+    text-align: center;
+}
+
+.submit-btn:hover {
+    background-color: #402d22;
+}
+
+/* Responsividade */
+
+/* Tablets (até 1024px) */
+@media (max-width: 1024px) {
+    .contact-section {
+        margin-top: 50px;
+    }
+
+    .contact-title {
+        font-size: 28px;
+    }
+
+    .contact-description {
+        font-size: 15px;
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: 25px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 15px;
+    }
+
+    .submit-btn {
+        width: 60%;
+    }
+}
+
+/* Celulares médios (até 768px) */
+@media (max-width: 768px) {
+    .contact-section {
+        margin-top: 40px;
+        padding: 30px 15px;
+    }
+
+    .contact-title {
+        font-size: 24px;
+    }
+
+    .contact-description {
+        font-size: 14px;
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: 20px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 14px;
+    }
+
+    .submit-btn {
+        width: 70%;
+    }
+}
+
+/* Celulares pequenos (até 480px) */
+@media (max-width: 480px) {
+    .contact-section {
+        margin-top: 30px;
+        padding: 20px 10px;
+    }
+
+    .contact-title {
+        font-size: 20px;
+    }
+
+    .contact-description {
+        font-size: 13px;
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: 15px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 13px;
+    }
+
+    .submit-btn {
+        width: 80%;
+        font-size: 14px;
+    }
+}
